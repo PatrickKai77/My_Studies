@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS aula</title>
+        <link href="Css.css" type="text/css" rel="stylesheet"/>
+        <link href="font.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1 class="topico">Aulas CSS</h1>
+        <p class="text">Para conseguirmos usar o Css com eficiencia devemos usar o link, para que nossa pagina html receba os códigos do arquivo css.</p>
+        <h2>Devemos ficar atentos aos códigos para alterar o que queremos usando a class, id.</h2>
+        <h1>Potatoes</h1>
+        <p id="intro">There are <i>dozens</i> of different <b>potato</b> varieties.</p>
+        <p>They are usually described as early, second early and maincrop potatoes.</p>
+        <div class="page">
+         <h1 class="in">Inheritance</h1>
+         <p >Se você aplicar CSS ao body element, ele vai aplicar a todos os filhos.</p>
+         <p>Assim é mais simples do que ir aplicando em cada elemento.</p>
+        </div>
+        
+        <h1 class="Font">Font Family</h1>
+        <div class="expfont">
+            <h1 class="titulz">Sites Insanos!</h1>
+            <p class="credits">by Patrick San</p>
+            <p class="intro">O site <a class="naruto" href="https://www.narutogame.com.br">Naruto Game</a>, está hoje com um novo lançamento.
+            <br/>No ano de 2000 o site ainda estava na fase beta e em desenvolvimento, segundo <cite>Mark</cite> o diretor do projeto, eles ainda tem grandes planos.</p>
+        </div>
+        <hr/>
+        <hr/>
+        <p>Podemos também alterar o Font Style. <span class="italic">Italico por exemplo.</span>Ou até mesmo <span class="ob">obliquo.</span></p>
+        <p>Podemos usar uppercase,lowercase e capitalize.</p><br/>
+        <p><span class="uper">exemplo de upercase</span></p><br/>
+        <p><span class="lowe">exemplo de lowercase</span></p><br/>
+        <p><span class="capt">exemplo de capitalize</span></p>
+        <div class="understrike">
+            <h1>underline & strike</h1>
+            <p class="textdeco">text-decoration</p>
+            <p>Existem alguns tipos: none, underline, overline, line-through.</p>
+            <p class="under">Underline</p><br/>
+            <p class="overl">Overline</p><br/>
+            <p class="throu">Line-Through</p>
+        </div>
+        <div class="letterwordspace">
+            <h1 class="lett">Letter & Word spacing</h1>
+            <p class="letters">Exemplo de letter-spacing</p>
+            <p class="wordz">exemplo de word-spacing</p>
+        </div>
+        <div class="dropshadow">
+            <h1 class="dropz">DropShadow</h1>
+            <p class="expdrop">A função text-dropshadow contém 4 elementos.<br/>
+                 O 1 px é sobre o quão longe sombra deve ficar para esquerda ou direita.<br/>
+                Depois o 2 px é sobre o quão longe deve ficar do topo ou da bas, que deve cair.<br/>
+                3px é opcional, mas especifica a quantidade de blur.<br/>
+                4px é sobre a cor da sombra.
+            </p>
+        </div>
+        <div class="pseudo-elements">
+            <h1>Pseudo Elementos</h1>
+            <p>Pseudo elementos agem como um código extra.<br/>
+                .a:first-line{ } <span class="pseudoexp">-> Neste podemos definir qual será a alteração da primeira linha.</span><br/>
+                .a:first-letter{ } <span class="pseudoexp1">-> Neste podemos definir qual será a alteração da primeira letra. </span><br/>
+                .a:link{ } <span class="pseudoexp2">-> Neste definiremos como será quando o link não tiver sido acessado ainda.</span><br/>
+                .a:visited{ } <span class="pseudoexp3">Neste definiremos como será quando o link já tiver sido visitado.</span>
+            </p>
+            <p>Pseudo classes que mudam a aparência do elemento com a interação do usuário:<br/>
+                input.a:hover -> Quando o mouse estiver em cima, algo na aparência vai mudar.<br/>
+                input.a:active<br/>
+                focus
+            </p>
+        </div>
+    </body>
+</html>

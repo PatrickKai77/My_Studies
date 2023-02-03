@@ -1,0 +1,99 @@
+.Font{
+    color:rgb(39, 138, 77);
+    padding: 2px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    background-color: black;
+    text-shadow: 10px white;
+    text-align: center;
+    padding: 1px;
+}
+.expfont{
+    background-color: black;
+}
+.titulz{
+    color:yellowgreen;
+    padding: inherit;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size:25px;
+}
+.credits{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+.intro{
+    color:whitesmoke;
+}
+p a.naruto{
+    color:yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 125%;
+}
+.italic{
+    font-style: italic;
+}
+.ob{
+    font-style: oblique;
+}
+.uper{
+    text-transform: uppercase;
+}
+.lowe{
+    text-transform: lowercase;
+}
+.capt{
+    text-transform: capitalize;
+}
+.understrike{
+    text-transform: uppercase;
+    color:rgb(92, 90, 90);
+    text-align: left;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1px;
+    line-height: 0.7em;
+}
+.textdeco{
+    color:rgb(224, 66, 93);
+    text-transform: lowercase;
+    line-height: 1.2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:left;
+}
+.under{
+    text-decoration: underline;
+}
+.overl:active{
+    text-decoration: overline;
+    text-indent: 40px;
+}.throu{text-decoration: line-through;}.blink{text-decoration:black;}
+.lett{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:grey;
+    text-align: left;
+    font-size: 57px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    line-height: 0.5em;
+}
+.letters{
+    color:blueviolet;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, serif;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+}
+.wordz{
+    color:blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    word-spacing: 0.3em;
+    text-indent: 30px;
+}
+.expdrop{
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 3px green;
+}
+.dropz{
+    color:black;
+    text-shadow: 2px 2px 1px yellow;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Class</title>
+</head>
+
+<h1>Bem vindo a aula de tabela.</h1>
+<hr/>
+<hr/>
+<h2>Estrutura básica de uma tabela.</h2>
+<p>PAra uma tabela ser iniciada usaremos o elemento <strong>table</strong>.<br/>Dentro dele
+deve haver alguns atributos como o <strong>tr</strong>, que é responsável por indicar o começo de cada linha.</p>
+<p>A seguir temos o <strong>td</strong>, que fica dentro do <cite>tr</cite>, ele é responsável por criar a célula.</p>
+<hr/>
+<hr/>
+<h2>Exemplo</h2>
+<table>
+    <tr>
+        <td>Vitimas</td>
+        <td>Indice</td>
+        <td>Taxa de mortalidade</td>
+    </tr>
+    <tr>
+        <td>43</td>
+        <td>76%%</td>
+        <td>12%</td>
+    </tr>
+</table>
+<p>Cabeçalho da Tabela, pode ser definido um titulo da coluna, ou linha.</p>
+<p>Para isso usamos th scope="col" ou "row"</p>
+<table>
+    <tr>
+        <th scope="col" colspan="2">Funcionarios</th>
+        <th scope="col" colspan="2">Salarios</th>
+    </tr>
+<tr></tr>
+<tr>
+    <td colspan="2">Albertino</td>
+    <td>R$2300</td>
+</tr>
+<tr>
+    <td colspan="2">Kaitigroski</td>
+    <td>R$5000</td>
+</tr>
+</table>
+<p>As vezes vamos querer espalhar a celulla, tipo que juntar q nem no excel, pra isso usamos colspan="numero de celulas"
+    <br/>Podemos também fazer isso com as linhas <i>rowspan</i>, indicando quantas devem se juntar para baixo.
+</p>
+<hr/>
+<hr/>
+<h2>Long tables</h2>
+<p>Para criar uma long table, organização é crucial, por isso usaremos os elementos, <strong>thead, tbody, tfoot</strong></p>
+<table>
+    <thead>
+        <th>Funcionários</th>
+        <th>CPF</th>
+        <th>Endereço</th>
+    </thead>
+    <hr/>
+    <tbody>
+        <tr>
+            <td>Carlos</td>
+            <td>0281923092</td>
+            <td> JOin avenue</td>
+        </tr>
+        <tr>
+            <td>Ana Elisa</td>
+            <td>1289732</td>
+            <td>Hunter village</td>
+        </tr>
+        <tr>
+            <td>Kaitigroski</td>
+            <td>123445742</td>
+            <td>Pallet</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>alek 123</td>
+            <td>12334423</td>
+            <td>Demacia</td>
+        </tr>
+    </tfoot>
+</table>
+<h3>Espaçamento e tamanho nas tabelas</h3>
+<p>Grande parte desses tipos de códigos foram repostos pelo CSS, permitindo uma personalização mais sofisticada.</p>
+<p>Podemos também criar espaçamento entre as colnas, linhas e células. Para isto usamos <b>cellpadding</b>(para adicionar espaço
+dentro de cada célula.
+<br/>Já o <b>cellspacing</b> é necessário para criar espaço entre cada célula.  </p>
+<table widht="500" cellpadding="3" cellspacing="5">
+    <tr>
+        <th></th>
+        <th widht="200">Produto</th>
+        <th>Preço</th>
+        <th>Fabrica</th>
+        <th widht="200">Preço final</th>
+    </tr>
+    <tr>
+       <td widht="100"></td>
+        <td rowspan="2">Carne</td>
+        <td>25$</td>
+        <td>Xicago</td>
+        <td >80$</td>
+    </tr>
+</table>
+<hr/>
+<hr/>
+<h3><i>Criando Borda e Background/OldCode</i></h3>
+<table widht="300" border="2" bgcolor="#efefef" cellpadding="3">
+    <tr>
+        <th colspan="3">Internet rápida e barata? Somente aqui!!</th>
+    </tr>
+    <!--Primeiro plano-->
+    <tr>
+        <th></th>
+        <th>Free</th>
+        <th>Vip</th>
+    </tr>
+    <tr>
+        <td><i><b>Disk Space</b></i></td>
+        <td>250mb</td>
+        <td>1GB</td>
+    </tr>
+    <tr>
+        <td><i><b>Bandwidth</b></i></td>
+        <td>5GB per month</td>
+        <td>50GB per month</td>
+    </tr>
+    <tr>
+        <td><i><b>Email accounts</b></i></td>
+        <td>3</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td><i><b>Server</b></i></td>
+        <td>Shared</td>
+        <td>VPS</td>
+    </tr>
+    <tr>
+        <td><i><b>Support</b></i></td>
+        <td>Email</td>
+        <td>Telephone/Email</td>
+    </tr>
+    <tr>
+        <td><i><b>Setup</b></i></td>
+        <td>Free</td>
+        <td>Free</td>
+    </tr>
+    <tr>
+        <td><i><b>FTP accounts</b></i></td>
+        <td>1</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td><i><b>Value</b></i></td>
+        <td>50$ per month</td>
+        <td>250$ per month</td>
+    </tr>
+    <tr>
+        <th colspan="3">Oferta válida somente para hoje!!!</th>
+    </tr>
+    <tr>
+       <th colspan="3">Clique no link abaixo e faça seu registro.</th>
+    </tr>
+</table>
+<p widht="100"><a href="Register/register.html">Cadastrar-se</a></p>
+
+
+</html>

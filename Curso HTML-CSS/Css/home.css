@@ -1,0 +1,71 @@
+body {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    background-image: url("../Images/SL_042620_30310_19.jpg");
+    background-size: 100%;
+}
+h1.topo{
+    color:yellowgreen;
+    font-size: 500%;
+    border:2px solid rgb(36, 223, 19);
+    border-radius: 7px;
+    padding: inherit;
+    text-align: center;
+    background-image: url("../Images/pexels-eberhard-grossgasteiger-844297.jpg");
+    background-position: center center;
+    opacity: 0.9;
+    text-shadow: 2px 2px 2px blueviolet;
+
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:brown;
+    font-size: 150%;
+}
+.topicos{
+    border:2px solid black;
+    padding: inherit;
+    border-radius: 10px;
+}
+.figurecaption:link{
+    color:green;
+}
+.figurecapt:visited{
+    color:black;
+}
+input {
+    padding: 5px 15px 5px 10px;
+    border: 2px solid #000000;
+    color: #000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    input.butoncss:hover {background-color: #2ab431;}
+    input.butonform:hover {background-color: rgb(118, 94, 182);}
+    input.butontable:hover{background-color: aqua;}
+    input.butonmark:hover{background-color: greenyellow;}
+    input.butonflash:hover{background-color: rgb(201, 108, 108);}
+    input.butonbox:hover{background-color: aquamarine;}
+
+
+ol{
+    list-style-type: lower-roman;
+}
+ul{
+    list-style-image: url("/Images/loading-gif.gif");
+}
+li{
+    margin: 10px 0px 0px 0px;
+    list-style-position: outside;
+    list-style: disc outside;
+}
+td {
+    border: 2px solid #000000;
+    padding: 15px;
+    background-color: #2ab431;}
+    table.onex {
+    empty-cells: show;
+border-spacing: 5px 5px;}
+    table.onex:hover {
+    empty-cells: hide;
+    border-collapse: collapse;
+cursor: text;}

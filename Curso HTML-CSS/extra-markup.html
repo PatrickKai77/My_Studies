@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Extra Markup</title>
+    </head>
+    <body>
+        <h1><i>Extra Markup</i></h1>
+        <h3><b>↳</b> Specifying different versions of HTML<br/>
+            <b>↳</b> Identifying and grouping elements<br/>
+            <b>↳</b> Comments, meta information and iframes
+        </h3>
+        <hr/>
+        <hr/>
+        <h2>Pontos chaves deste Capitulo:</h2>
+        <ul>
+            <li>The different versions of HTML and how to indicate which version you are using.</li>
+            <li>How to add comments to your code</li>
+            <li>Global attributes, which are attributes that can be used on
+                any element, including the class and id attributes</li>
+            <li>Elements that are used to group together parts of the page
+                where no other element is suitable</li>
+            <li>How to embed a page within a page using iframes</li>
+            <li>How to add information about the web page using the
+                <b>meta</b> element</li>
+            <li>Adding characters such as angled brackets and copyright
+                symbols</li>
+        </ul>
+        <h2>Adicionando comentários</h2>
+        <p>Isto você está vendo</p>
+        <!--Comentários são uteis para estruturar e organizar a informação contida no site de forma que
+        nós dev's, tenhamos facilidade de compreender o código.-->
+        <h2>Atributo ID</h2>
+        <p>O atributo id pode ser dado a cada elemento, diferenciando o mesmo dos otutros</p>
+        <p id="teste">Assim se precisar, podemos acessar e modificar x parte pelo ID, fazendo uso do CSS.</p>
+        <p>Outro exemplo em que o ID é necessário, é o JAVASCRIPT. Pois ele precisa do ID dos elementos para poder criar uma interação.</p>
+        <h2>Atributo class</h2>
+        <p>Parecido com o id, mas as vezes vamos querer destacar partes de um texto, podemos usar o class.</p>
+        <p class="blue">Basta agora usar o css para modificar o atributo class blue. Assim toda class blue, ficara azul, por exemplo.</p>
+        <h2>Block Elements</h2><br/>
+        <img src="Images/block_elements.png" alt="blockelement" title="Elementos por bloco"/>
+        <h2>Inline Elements</h2>
+        <img src="Images/inline_elements.png" title="elementos dentro texto"/>
+        <hr/>
+        <hr/>
+        <h1>Agrupando textos e elementos em um bloco</h1>
+        <div id="header">
+            <img src="Images/icons8-naruto-sign-16 (1).png" alt="naruto">
+            <ul>
+                <li><a href="primeiro.html">Home</a></li>
+                <li><a href="Register/register.html">Registro</a></li>
+            </ul>
+            <p>Para agrupar tudo com um ID, devemos usar div id=, então tudo que estiver contido dentro será relacionado ao id do div. </p>
+        </div><!--fim do header-->
+        <h2>Agruoando textos e elementos inline</h2>
+        <p>Para podermos fazer isso o comando será o span class na palavra.</p>
+        <p><em>Por exemplo:</em>A história é <span class="complex">complexa</span> e devemos entender.</p>
+        <p>O mais comum é ver pessoas usando o span, para controlar o estilo da fonte usando CSS.</p>
+        <h1>Iframes</h1>
+        <p>that has been cut into your page — and in that window you can see another page. The term iframe is an abbreviation of inline frame.</p>
+        <iframe width="450" height="350" src="https://www.animesgratisbr.biz/video/4764/"></iframe>
+        <hr/>
+        <h2>Meta</h2>
+        <p>O elemento Meta, estará sempre contido <em>dentro do head,</em> pois ele conterá informações sobre a página web.</p>
+        <p>Este elemento é vazio, logo não tem tag de fechamento, pois ele usa atributos para carregar as informações.</p>
+        <p>Os atributos mais comuns são: <b>name e content.</b><br/>O valor de <em>name</em> é a propriedade que você está configurando.
+        <br/>Já o content, é o valor que você quer dar à propriedade</p>
+        <h3>Valores comumente usados no NAME </h3>
+        <p><span class="description"><b>description</b></span>, contém a infnormação da página, é usado por search engines.</p>
+        <p><span class="robots">Robots</span>, A value of nofollow can be used if search engines should add this page in their results but not any pages that it links to.</p>
+        <img src="Images/meta_exp.png" alt="Explicação meta" title="Meta"/>
+        <h2>Special Simbols</h2>
+        <img src="Images/special_symbols.png" alt="usado quando não suportados" title="special Simbols"/>
+    </body>
+</html>

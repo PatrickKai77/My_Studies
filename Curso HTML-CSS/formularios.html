@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<h1>Controle de formulários </h1>
+<p>Exemplo do Livro</p>    
+<form action="http://www.example.com/subscribe.php"method="get">
+    <p>This is where the form controls will appear.
+     </p>
+</form>
+<p>Para criarmos uma box, inserimos o elemento <b>input</b> dentro do form, seus atributos variam, podendo ser</p>
+<table widht="300" border="2" bgcolor="#efefef" cellpadding="3" >
+    <th>Atributos</th>
+    <th>Significado</th>
+    <tr>
+        <td><b>type</b></td>
+        <td>text</td>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>username/login</td>
+    </tr>
+    <tr>
+        <td>size</td>
+        <td>recomendamos usar CSS, size ultrapassado</td>
+    </tr>
+    <tr>
+        <td>maxlenght</td>
+        <td>tamanho máximo de caracteres possiveis na box</td>
+    </tr>
+</table>
+<form action="http://www.example.com/subscribe.php" method="get">
+    <p>Nome Completo:<input type="text" username="name"/></p>
+    <p>CPF:<input type="text" username="cpf"/></p>
+    <p>Login:<input type="text" username="login"/></p>
+    <p>Senha:<input type="password" username="password" size="10" maxlength="10"/></p>
+</form>
+<h2>Textarea</h2>
+<form action="http://www.example.com/comments.php">
+    <p>Como tem sido sua experiência neste Site?</p>
+     <textarea name="comments" cols="100" rows="4"></textarea>
+    </form>
+<h2>Radio Button Form</h2>
+    <form action="http://www.example.com/profile.php">
+        <p>Selecione o método de pagamento:
+         <br />
+         <input type="radio" name="pagamento" value="cartaocredito" />Cartão de Crédito
+         <input type="radio" name="pagamento" value="boleto" />Boleto
+         <input type="radio" name="pagamento" value="pix" />Pix
+        </p>
+        </form>
+<h2>Check Box</h2>
+<form action="http://www.example.com/profile.php">
+    <p>Selecione seus jogos favoritos:</p>
+    <input type="checkbox" name="jogos" value="apex"/>Apex<br/>
+    <input type="checkbox" name="jogos" value="lol"/>League of Legends<br/>
+    <input type="checkbox" name="jogos" value="raft"/>Raft<br/>
+    <input type="checkbox" name="jogos" value="otp"/>Otpokemon
+</form>
+<h2> Drop down list</h2>
+<form action="http://www.example.com/profile.php">
+    <p>Qual arma você deseja usar?</p>
+    <select name="armas">
+     <option value="faca">Faca</option>
+     <option value="pistola">Pistola</option>
+     <option value=".50">.50</option>
+    </select>
+</form>
+<h2>Multiple Select Box</h2>
+<form action="http://www.example.com/profile.php">
+    <p>Do you play any of the following instruments?</p>
+    <select name="instruments" size="4" multiple="multiple">
+    <option value="guitar" selected="selected">Guitar</option>
+    <option value="drums">Drums</option>
+    <option value="keyboard" selected="selected">Keyboard</option>
+    <option value="bass">Bass</option>
+    </select>
+</form>
+<h2>File Input Box</h2>
+<form action="http://www.example.com/upload.php" method="post">
+<p>Upload your song in MP3 format:</p>
+<input type="file" name="user-song" /><br />
+<input type="submit" value="Upload" />
+</form>
+<h2>Submit Button</h2>
+<form action="http://www.example.com/subscribe.php">
+    <p>Subscribe to our email list:</p>
+    <input type="text" name="email" />
+    <input type="submit" name="subscribe"value="Inscrever-se" />
+</form>
+<h2>Image Button</h2>
+<form action="http://www.example.org/subscribe.php">
+    <p>Subscribe to our email list:</p>
+     <input type="text" name="email" />
+     <input type="image" src="Images/icons8-submit-64.png" width="50" height="50" />
+</form>
+<h2>Button & hidden Controls</h2>
+<form action="http://www.example.org/control.ph">
+    <button>
+        <img src="Images/icons8-naruto-sign-16 (1).png" alt="add" widht="16" height="16"/>Add
+    </button>
+    <input type="hidden" name="bookmark" value="lyrics"/>
+</form>
+<h2>Labbeling and control form</h2>
+<label>Nome: <input type="text" name="name"/></label>
+<br/>
+Qual pokemon deseja iniciar sua jornada?:
+<input id="raichu" type="radio" name="pokemon"value="raic">
+<label for="raichu">Raichu<img src="Images/icons8-pikachu-pokemon-16.png" alt="pokemon" /></label>
+<input id="blastoise" type="radio" name="pokemon"value="blas">
+<label for="blastoise">Blastoise</label><br/>
+<label>Deseja iniciar sua jornada agora?<br/>
+    <input id="yes" type="radio" name="escolha" value="yes"></label>
+    <label for="yes"><img src="Images/icons8-naruto-sign-16 (1).png" alt="yes option naruto" widht="16" height="16"/>Yes</label>
+    <input id="no" type="radio" name="escolha" value="no">
+    <label for="no"><i><b>No</b></i></label>
+<p>Sem o label o nome male não apareceria, podemos colocar uma imagem junto a opção, mas ela deve ir no determminado label.</p>
+<h2>Agrupamento elementos no Formulário </h2>
+<p>Para fazermos um agrupamento é necessário usar o atributo <b>fieldset</b>.</p>
+<fieldset >
+    <legend>Cadastro Pokemon</legend>
+    <label>Nome do Pokemon:</label>
+    <input type="text" name="npokemon">
+    <label>Gênero</label>
+    <select><option value="male">Macho</option><option value="female">Fêmea</option></select>
+    <label>Peso:</label>
+    <input type="number" name="peso">
+</fieldset>
+<h2>Criando formulário de validação</h2>
+<form action="http://www.example.org/login.php" method="post">
+    <label for="username">Username</label>
+    <input type="text" name="username" required="required"/></title><br/>
+    <label for="password">Password</label>
+    <input type="password" name="password" required="required"/>
+    <input type="submit" value="Submit"/>
+</form>
+<h2>Input date</h2>
+<form action="http://www.example.com/bookings/" method="post">
+    <label for="datanasc">Data de nascimento:</label>
+    <input type="date" name="nascimentod"/>
+    <input type="submit" value="submit"/>
+ </form>
+ <p>Pelo que entendi o label for, sozinho, cria por sí só o <i>id</i> de um dado.</p>
+ <h2>Input Email/URL</h2>
+ <form action="http://www.example.org/subscribe.php">
+        <p>Por favor, digite seu email:</p>
+        <input type="email" name="email"/>
+        <input type="submit" value="Registrar"/>
+ </form>
+ <form action="http://www.example.org/url.php">
+    <p>Digite o site:</p>
+    <input type="url" name="website"/>
+    <input type="submit" value="Search"/>
+ </form>
+ <h2>Search input</h2>
+ <form action="http://www.example.org/search.php">
+    <p>Search:</p>
+    <input type="search" name="search" placeholder="Procurar"/>
+    <input type="submit" value="Search" />
+</form>
+</html>
+
